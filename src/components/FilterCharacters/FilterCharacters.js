@@ -1,4 +1,4 @@
-import { Modal, Button, Form } from 'react-bootstrap';
+ import { Modal, Button, Form } from 'react-bootstrap';
 import { useContext, useEffect, useState } from 'react';
 import './FilterCharacters.css';
 import DropdownMultiselect from "react-multiselect-dropdown-bootstrap";
@@ -43,6 +43,10 @@ const FilterCharacters = ({ characters, setFilteredCharacters }) => {
         });
         setStatusFiltered(filteredCharacters);
     }, [statusSelected]);
+    
+    useEffect(() => {
+        intersectFilters();
+    }, [occupationsFiltered, statusFiltered]);
     
     const intersectFilters = () => {
         setFilteredCharacters(occupationsFiltered.filter(c1 => statusFiltered.some(c2 => c2.char_id == c1.char_id)));
