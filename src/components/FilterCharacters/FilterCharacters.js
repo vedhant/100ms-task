@@ -9,8 +9,10 @@ const FilterCharacters = ({ characters, setFilteredCharacters }) => {
     const [showModal, setShowModal] = useState(false);
     const [occupationsList, setOccupationsList] = useState([]);
     const [occupationsSelected, setOccupationsSelected] = useState([]);
+    const [occupationsFiltered, setOccupationsFiltered] = useState([]);
     const [statusList, setStatusList] = useState([]);
     const [statusSelected, setStatusSelected] = useState([]);
+    const [statusFiltered, setStatusFiltered] = useState([]);
 
     useEffect(() => {
         let occupations = new Set();
@@ -32,15 +34,19 @@ const FilterCharacters = ({ characters, setFilteredCharacters }) => {
             let intersection = c.occupation.filter(o => occupationsSelected.includes(o));
             return intersection.length > 0;
         });
-        setFilteredCharacters(filteredCharacters);
+        setOccupationsFiltered(filteredCharacters);
     }, [occupationsSelected]);
 
     useEffect(() => {
         let filteredCharacters = characters.filter(c => {
             return statusSelected.includes(c.status);
         });
-        setFilteredCharacters(filteredCharacters);
+        setStatusFiltered(filteredCharacters);
     }, [statusSelected]);
+    
+    const intersectFilters = () => {
+        setFilteredCharacters(occupationsFiltered.filter(c1 => statusFiltered.some(c2 => c2.char_id == c1.char_id)));
+    };
 
     return (
         <>
