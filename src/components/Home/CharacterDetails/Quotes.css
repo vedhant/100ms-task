@@ -1,0 +1,40 @@
+.QuotesContainer {
+    padding-left: 0px;
+    margin-top: 4%;
+    animation: slide-in 1.5s forwards;
+}
+
+.QuotesContainer .charQuote {
+    background-color: var(--elevation-color);
+    /* border-radius: 6px; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-left: 3px solid var(--accent-color);
+    font-style: italic;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.charQuote:before,
+.charQuote:after {
+    font-size: 2.5em;
+    vertical-align: middle;
+    line-height: 0;
+}
+
+.charQuote:before {
+    content: open-quote;
+    margin-right: 1.5%;
+    color: var(--accent-color) !important;
+}
+
+.charQuote:after {
+    content: close-quote;
+    margin-left: 1%;
+    color: var(--accent-color) !important;
+}
+
+@keyframes slide-in {
+    0% {transform: translateX(100%);}
+    100% { transform: translateX(0%); }
+}

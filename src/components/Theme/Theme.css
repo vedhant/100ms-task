@@ -1,0 +1,21 @@
+#themeContainer {
+    color: var(--font-color) !important;
+    font-size: 1.25em;
+    align-content: center;
+    margin-right: 0%;
+    animation: slide-in 1s;
+}
+
+#themeContainer input[type="checkbox"] {
+    box-shadow: none;
+    border: none;
+}
+
+#themeContainer input[type="checkbox"] {
+    background-color: var(--bg-color);
+}
+
+#themeContainer label {
+    margin-bottom: 0 !important;
+    display: flex !important;
+}

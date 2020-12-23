@@ -1,0 +1,22 @@
+.charDetailsContainer {
+    color: var(--font-color);
+}
+
+.charDetailsContainer .charName {
+    font-size: 3em;
+    color: var(--accent-color);
+    padding-bottom: 3%;
+}
+
+.charDetailsContainer .charDetailsCol {
+    font-size: 1.2em;
+    animation: appear 1.5s;
+}
+
+.charDetailsContainer .char-detail-title {
+    color: var(--font-color-med-emphasis) !important;
+}
+
+.charDetailsContainer img {
+    animation: grow 0.8s;
+}
