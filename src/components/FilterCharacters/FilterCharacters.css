@@ -1,0 +1,28 @@
+.filterIcon {
+    color: var(--font-color) !important;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#filterModal, #filterModal .modal-content {
+    background-color: var(--bg-color) !important;
+    color: var(--font-color);
+}
+
+#filterModal button {
+    color: var(--font-color);
+}
+
+#filterModal .dropdown-item {
+    background-color: var(--elevation-color) !important;
+    color: var(--font-color);
+}
+
+#filterModal .dropdown-menu .btn-group button {
+    background-color: var(--bg-color) !important;
+    color: var(--font-color);
+}
+
+#filterModal .form-label {
+    padding-top: 3%;
+}

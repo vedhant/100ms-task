@@ -13,9 +13,20 @@
     transition: 0.3s;
     animation: slide-in 1s;
     margin: 0;
-    margin-left: 3%;
+    margin-right: 8%;
 }
 
+.searchFilterContainer {
+    margin-left: 3%;
+    padding: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .searchFilterContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
 .searchNameForm .searchIcon {
     color: inherit !important;

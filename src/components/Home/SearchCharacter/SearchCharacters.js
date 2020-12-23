@@ -10,7 +10,7 @@ const SearchCharacters = ({ characters, setFilteredCharacters }) => {
     }, [searchName]);
 
     return (
-        <Form inline className='searchNameForm flex-grow-1 flex-sm-grow-0 row'>
+        <Form inline className='searchNameForm row'>
             <FormControl className="col-10" type='text' placeholder='Search...' value={searchName} onChange={e => setSearchName(e.target.value)} />
             <span className="col-2 material-icons form-control-feedback searchIcon">search</span>
         </Form>

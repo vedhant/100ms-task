@@ -15,7 +15,7 @@ const darkThemeColors = {
     font_color: 'rgba(255, 255, 255, 0.87)',
     font_color_med_emphasis: 'rgba(255, 255, 255, 0.60)',
     navbar_bg_color: '#121212',
-    elevation_color: 'rgba(255, 255, 255, 0.05)',
+    elevation_color: '#1e1e1e',
 }
 
 export const ThemeContext = createContext();

@@ -11,26 +11,6 @@ code {
     monospace;
 }
 
-/* :root {
-  --bg-color: #121212;
-  --accent-color: #369457;
-  --font-color: rgba(255, 255, 255, 0.87);
-  --font-color-med-emphasis: rgba(255, 255, 255, 0.60);
-  --card-bg-color: #1121212;
-  --navbar-bg-color: #121212;
-  --elevation-color: rgba(255, 255, 255, 0.05);
-} */
-
-/* :root {
-  --bg-color: #FFFFFF;
-  --accent-color: #29773E;
-  --font-color: #000000;
-  --font-color-med-emphasis: rgba(0, 0, 0, 0.70);
-  --card-bg-color: #1121212;
-  --navbar-bg-color: #FFFFFF;
-  --elevation-color: #DBDEE1;
-} */
-
 .container-fluid {
   padding-left: 5%;
   padding-right: 5%;

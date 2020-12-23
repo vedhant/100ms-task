@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import './NavBar.css';
 import SearchCharacters from '../Home/SearchCharacter/SearchCharacters';
 import Theme from '../Theme/Theme';
+import FilterCharacters from '../FilterCharacters/FilterCharacters';
 
 const NavBar = (props) => {
     return (
@@ -17,7 +18,10 @@ const NavBar = (props) => {
             <Theme />
             {
                 props.hasOwnProperty('characters') ? (
-                    <SearchCharacters characters={props.characters} setFilteredCharacters={props.setFilteredCharacters} />
+                    <div className="searchFilterContainer d-flex flex-row align-items-center justify-content-between">
+                        <SearchCharacters characters={props.characters} setFilteredCharacters={props.setSearchedCharacters} />
+                        <FilterCharacters characters={props.characters} setFilteredCharacters={props.setFilteredCharacters}/>
+                    </div>
                     ) : (
                         <Fragment></Fragment>
                         )
