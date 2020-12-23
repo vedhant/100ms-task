@@ -18,7 +18,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: width 2s;
-    /* transition: 0.3s; */
+    transition: 0.3s;
     width: 5%;
     animation: grow-icon 1s;
     padding-left: 0;
